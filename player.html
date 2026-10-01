@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en"><head><meta name="thechop-mode" content="static"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Player · The Chop</title>
+<link rel="icon" type="image/svg+xml" href="./img/thechop-g2-icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/base.css">
+<link rel="stylesheet" href="./css/player.css">
+</head>
+<body class="loading">
+<div id="bg"><div class="photo"></div><img class="mark" src="" alt="" hidden><div class="wm" id="wm" aria-hidden="true"></div><div class="chopwm" aria-hidden="true"></div></div>
+<div id="nbar" aria-hidden="true"></div>
+<div id="app">
+  <header>
+    <span id="logoslot"></span><a class="logo" id="tlogo"><img src="" alt="" hidden></a>
+    <div class="who"><div class="nm" id="nm"></div><div class="meta" id="meta"></div><nav class="pswitch" id="pswitch" hidden></nav></div>
+    <div class="hr"><div id="nav"></div><div class="chips" id="seasons"></div><div id="showing"></div></div>
+  </header>
+  <section id="state" role="status"><span class="spin"></span>Loading his page…</section>
+  <div id="stage">
+    <svg id="rings"></svg>
+    <div class="layer">How it stacks up<i><span id="layerwho"></span></i></div>
+    <div class="sun" id="sun"><div class="ph"><img src="" alt=""></div><span class="no" id="no"></span></div>
+    <div class="cap" id="cap"></div>
+    <div class="brk"></div>
+    <div id="inner" style="display:contents"></div>
+    <div class="brk"></div>
+    <div id="midr" style="display:contents"></div>
+    <div class="brk"></div>
+    <div id="outer" style="display:contents"></div>
+  </div>
+  <section id="sheet" hidden></section>
+  <aside id="panel"></aside>
+  <div id="seamv" aria-hidden="true"></div>
+  <footer id="foot"><a href="./" title="The Chop home"><img class="fl" src="./img/thechop-g2-small.svg" alt="The Chop"></a><div class="ft" id="ftx"></div></footer>
+</div>
+<div id="tip"></div>
+<script type="module">
+import { boot } from "./js/player/render.js";
+boot();
+</script>
+</body></html>
