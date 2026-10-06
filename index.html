@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"><head><meta name="thechop-mode" content="static"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Chop</title>
+<link rel="icon" type="image/svg+xml" href="./img/thechop-g2-icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/base.css"></head><body>
+<div id="bg"></div>
+<div id="app">
+  <div id="nav"></div>
+  <section class="hero">
+    <h1>Every player, at a glance.</h1>
+    <p>See how good he is, what he does and how he does it, across every season of his career.</p>
+    <div class="search big"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <input id="hq" placeholder="Search any player by name" autocomplete="off" aria-label="Search any player by name"><div class="dd" id="hdd" hidden></div></div>
+  </section>
+  <section class="card" id="teams"><h2>Teams</h2><div class="tgrid" id="tgrid"></div></section>
+  <section class="lists">
+    <div class="listbar"><h2>League leaders</h2>
+      <label>Season <select id="season"></select></label></div>
+    <div class="two">
+      <div class="card" id="bat"></div>
+      <div class="card" id="pit"></div>
+    </div>
+  </section>
+  <footer class="foot"><img class="fl" src="./img/thechop-g2-small.svg" alt="The Chop"><div id="srcline">Data: FanGraphs.</div></footer>
+</div>
+<script type="module" src="./js/home.js"></script>
+</body></html>

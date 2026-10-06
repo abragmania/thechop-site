@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "updated": "2026-10-02",
+  "updatedBy": "lead (starting settings: today's player page, D36)",
+  "bat": {
+    "spotlight": {
+      "big": ["wRC+", "wOBA"],
+      "ring": ["HardHit%", "Barrel%", "ISO", "K%", "BB%"],
+      "ringLarge": ["HardHit%", "K%", "BB%"]
+    },
+    "boxes": [
+      { "id": "pitch", "show": true, "main": ["seen.usage", "seen.rv100"], "on": [] },
+      { "id": "hands", "show": true, "main": ["hand.wRC+", "hand.PA"], "on": ["hand.wOBA", "hand.ISO", "hand.HR/PA", "hand.K%", "hand.BB%", "hand.HardHit%"] },
+      { "id": "speed", "show": true, "main": ["Sprint speed", "SBA/PA", "SB%", "fld.OAA/1000", "OAA", "fld.inn", "DRS"], "on": ["G", "PA", "Spd", "SB", "CS", "SB/OB", "SB/PA", "CS%", "wBsR", "Def"] },
+      { "id": "disc", "show": true, "main": ["O-Swing%", "SwStr%", "Z-Contact%"], "on": ["PA", "Z-Swing%", "Swing%", "O-Contact%", "Contact%", "CStr%", "F-Strike%", "Zone%", "K%", "BB%", "Swing-take runs", "Heart runs", "Shadow runs", "Chase runs", "Waste runs"] },
+      { "id": "batted", "show": true, "main": ["HR/FB", "BABIP", "EV", "FB%"], "on": ["PA", "GB%", "LD%", "IFFB%", "Pull%", "Cent%", "Oppo%", "Soft%", "Med%", "Hard%", "Barrel%", "HardHit%", "EV50", "Brl/PA", "xHR", "xHR/PA", "No-doubters", "No-doubter%"] },
+      { "id": "career", "show": true, "main": ["wRC+"], "on": ["PA", "wOBA", "xwOBA", "K%", "BB%", "SwStr%", "ISO", "HR", "HR/PA", "EV", "Barrel%", "HardHit%", "GB%", "LD%", "FB%", "HR/FB", "BABIP", "Pull%"] }
+    ],
+    "plain": { "main": ["HR", "RBI", "R", "SB", "G", "PA", "H", "BB", "SO"], "on": [] }
+  },
+  "pit": {
+    "spotlight": {
+      "big": ["SIERA", "xFIP"],
+      "ring": ["K%", "BB%", "K-BB%", "HardHit%", "Barrel%"],
+      "ringLarge": ["K%", "BB%", "HardHit%"]
+    },
+    "boxes": [
+      { "id": "mix", "show": true, "main": ["pitch.usage", "pitch.velo", "pitch.rv100"], "on": ["pitch.spin", "pitch.hMov", "pitch.vMov", "pitch.whiff", "pitch.putAway"] },
+      { "id": "res", "show": true, "main": ["FIP", "wOBA against"], "on": ["TBF", "IP", "xFIP", "SIERA", "xERA", "FIP-", "xFIP-", "wOBA against (Savant)", "xwOBA against", "BABIP", "HR/FB", "HR/9", "WHIP", "LOB%", "SB allowed", "CS against", "SB/100BF", "SBA/100BF", "CS%", "pickoffs"] },
+      { "id": "career", "show": true, "main": ["FIP", "SIERA"], "on": ["TBF", "IP", "ERA", "xFIP", "K%", "BB%", "K-BB%", "SwStr%", "wOBA against", "wOBA against (Savant)", "xwOBA against", "HardHit%", "Barrel%", "GB%", "LD%", "FB%", "HR/FB", "BABIP", "LOB%"] },
+      { "id": "disc", "show": true, "main": ["O-Swing%", "SwStr%", "C+SwStr%", "Zone%"], "on": ["TBF", "Z-Swing%", "Swing%", "O-Contact%", "Z-Contact%", "Contact%", "CStr%", "F-Strike%", "K%", "BB%"] },
+      { "id": "hands", "show": true, "main": ["hand.wOBA against", "hand.PA"], "on": ["hand.FIP", "hand.K%", "hand.BB%", "hand.K-BB%", "hand.HardHit%", "hand.GB%"] },
+      { "id": "batted", "show": true, "main": ["GB%", "LD%", "FB%", "HR/FB", "BABIP", "LOB%"], "on": ["TBF", "IFFB%", "Pull%", "Cent%", "Oppo%", "Soft%", "Med%", "Hard%", "EV", "Barrel%", "HardHit%"] }
+    ],
+    "plain": { "main": ["W", "L", "G", "GS", "SV", "HLD", "IP", "SO", "BB", "HR", "H", "WHIP"], "on": [] }
+  }
+}

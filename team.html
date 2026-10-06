@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en"><head><meta name="thechop-mode" content="static"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Team · The Chop</title>
+<link rel="icon" type="image/svg+xml" href="./img/thechop-g2-icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/base.css">
+<link rel="stylesheet" href="./css/team.css">
+</head>
+<body>
+<div id="bg"><div class="photo"></div><img class="mark" src="" alt="" hidden><div class="chopwm" aria-hidden="true"></div></div>
+<div id="app">
+  <div id="nav"></div>
+  <div id="state" class="state" role="status">Loading the depth chart…</div>
+  <div id="page" hidden>
+    <div class="hero">
+      <div class="lg"><img id="hlogo" src="" alt=""></div>
+      <div><h1 id="tname"></h1><div class="meta" id="tmeta"></div></div>
+      <div class="asof" id="asof"></div>
+    </div>
+    <div id="bans"></div>
+    <div class="grid" style="margin-top:14px">
+      <div class="main" id="main"></div>
+      <div class="side" id="side"></div>
+    </div>
+    <div class="foot"><a href="./" title="The Chop home"><img class="fl" src="./img/thechop-g2-small.svg" alt="The Chop"></a><div id="foottx"></div></div>
+  </div>
+</div>
+<div id="tip" hidden></div>
+<script type="module" src="./js/team/render.js"></script>
+</body></html>

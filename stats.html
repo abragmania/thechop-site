@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en"><head><meta name="thechop-mode" content="static"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stats · The Chop</title>
+<link rel="icon" type="image/svg+xml" href="./img/thechop-g2-icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/base.css">
+<link rel="stylesheet" href="./css/stats.css">
+</head><body>
+<div id="bg"></div>
+<div id="app">
+  <div id="nav"></div>
+  <section class="shero">
+    <h1>Stats</h1>
+    <p class="intro">Every stat The Chop knows about, where it shows up, and where its numbers come from.</p>
+    <p class="asof" id="asof"></p>
+  </section>
+  <section class="card legend" aria-label="What the switches mean">
+    <div class="lgi"><span class="sw main">MAIN</span><span>Visible in that box on the player's main page.</span></div>
+    <div class="lgi"><span class="sw on">ON</span><span>Shown when that box is opened.</span></div>
+    <div class="lgi"><span class="sw off">OFF</span><span>Not shown in that box. A switch changes only its own box.</span></div>
+    <p class="lgn" id="modenote"></p>
+  </section>
+  <div id="state" class="msg" role="status">Loading the stats…</div>
+  <div id="page" hidden>
+    <div class="sbar">
+      <div class="tog" id="sidetog" role="tablist"><button data-side="bat" class="on" role="tab">Hitters</button><button data-side="pit" role="tab">Pitchers</button></div>
+      <div class="search sq"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="sq" placeholder="Find a stat" autocomplete="off" aria-label="Find a stat"></div>
+      <label class="offonly"><input type="checkbox" id="offonly"> Off everywhere only</label>
+    </div>
+    <section class="card" id="layout"></section>
+    <div id="cats"></div>
+  </div>
+  <footer class="foot"><img class="fl" src="./img/thechop-g2-small.svg" alt="The Chop"><div id="srcline">Sources: FanGraphs, MLB Stats API, Baseball Savant.</div></footer>
+</div>
+<div class="savebar" id="savebar" hidden></div>
+<script type="module" src="./js/stats.js"></script>
+</body></html>
